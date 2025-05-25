@@ -1,0 +1,50 @@
+{
+    "name": "sales",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureSqlDatabase1",
+            "type": "LinkedServiceReference"
+        },
+        "folder": {
+            "name": "real estate"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "SaleID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "PropertyID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "ClientID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "AgentID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "SaleDate",
+                "type": "date"
+            },
+            {
+                "name": "SalePrice",
+                "type": "decimal",
+                "precision": 12,
+                "scale": 2
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Sales"
+        }
+    }
+}

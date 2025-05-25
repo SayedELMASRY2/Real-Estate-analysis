@@ -1,0 +1,44 @@
+{
+    "name": "visits",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureSqlDatabase1",
+            "type": "LinkedServiceReference"
+        },
+        "folder": {
+            "name": "real estate"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "VisitID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "PropertyID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "ClientID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "AgentID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "VisitDate",
+                "type": "date"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Visits"
+        }
+    }
+}

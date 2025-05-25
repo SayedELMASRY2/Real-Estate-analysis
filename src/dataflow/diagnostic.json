@@ -1,0 +1,24 @@
+{
+    "now": "2025-05-21T10:07:07.268Z",
+    "perfNow": 7159549.099999964,
+    "diagnosticCorrelation": "10f976d8-2031-469b-8259-49ffb1773b0a",
+    "source": "DownloadSupportFiles",
+    "environment": {
+        "productName": "adf",
+        "buildVersion": "1.0.052025.5",
+        "environmentType": 3,
+        "resourceName": "real-state-DF",
+        "resourceRegion": "uaenorth",
+        "resourceGroup": "RS",
+        "subscriptionId": "4a85a3c9-02f8-4ba9-87e1-b7d7b79a7d7d",
+        "sessionId": "Jyna8mR98n4FI29vZUtmO0",
+        "operationId": "",
+        "gitType": "live",
+        "loggingKey": "b03ba0b6-e2bc-4a8a-8443-9f2e535cc05f"
+    },
+    "additionalInfo": {
+        "selectedResource": "model_data_preperation",
+        "selectedResourceType": "dataflow",
+        "dataFlowSessionId": "9de1c877-e09d-4d64-aeaa-7f1d27a02140"
+    }
+}

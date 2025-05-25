@@ -1,0 +1,90 @@
+source(output(
+		SaleID as integer,
+		PropertyID as integer,
+		ClientID as integer,
+		AgentID as integer,
+		SaleDate as date,
+		SalePrice as decimal(12,2)
+	),
+	allowSchemaDrift: true,
+	validateSchema: false,
+	isolationLevel: 'READ_UNCOMMITTED',
+	format: 'table') ~> sales
+source(output(
+		PropertyID as integer,
+		PropertyType as string,
+		Location as string,
+		Size_sqm as double,
+		PriceUSD as decimal(12,2)
+	),
+	allowSchemaDrift: true,
+	validateSchema: false,
+	isolationLevel: 'READ_UNCOMMITTED',
+	format: 'table') ~> properties
+source(output(
+		VisitID as integer,
+		PropertyID as integer,
+		ClientID as integer,
+		AgentID as integer,
+		VisitDate as date
+	),
+	allowSchemaDrift: true,
+	validateSchema: false,
+	isolationLevel: 'READ_UNCOMMITTED',
+	format: 'table') ~> visits
+visits aggregate(groupBy(PropertyID),
+	VisitCount = count(PropertyID)) ~> VisitCountAggregate
+properties, VisitCountAggregate join(properties@PropertyID == VisitCountAggregate@PropertyID,
+	joinType:'left',
+	matchType:'exact',
+	ignoreSpaces: false,
+	broadcast: 'auto')~> JoinVisits
+JoinVisits, sales join(properties@PropertyID == sales@PropertyID,
+	joinType:'left',
+	matchType:'exact',
+	ignoreSpaces: false,
+	broadcast: 'auto')~> JoinSales
+JoinSales derive(VisitCount = iif(isNull(VisitCount), toLong(0), VisitCount),
+		Sold = iif(isNull(sales@PropertyID), 0, 1),
+		VisitCountBin = iif(VisitCount <= 1, '0-1',
+  iif(VisitCount <= 3, '2-3',
+    iif(VisitCount <= 5, '4-5',
+      iif(VisitCount <= 10, '6-10', '11+')
+    )
+  )
+)
+,
+		Price_per_sqm = PriceUSD / Size_sqm,
+		PriceCategory = iif(PriceUSD <= 250000, 'Low',   iif(PriceUSD <= 500000, 'Medium',     iif(PriceUSD <= 750000, 'High', 'Premium')   ) ),
+		SizeCategory = iif(Size_sqm <= 150, 'Small',   iif(Size_sqm <= 300, 'Medium',     iif(Size_sqm <= 450, 'Large', 'Extra Large')   ) )) ~> derivedColumn1
+derivedColumn1 select(mapColumn(
+		PropertyID,
+		PropertyType,
+		Location,
+		Size_sqm,
+		PriceUSD,
+		PropertyID,
+		VisitCount,
+		PropertyID,
+		Sold,
+		VisitCountBin,
+		Price_per_sqm,
+		PriceCategory,
+		SizeCategory
+	),
+	skipDuplicateMapInputs: true,
+	skipDuplicateMapOutputs: true) ~> RemoveColumns1
+RemoveColumns1 sink(allowSchemaDrift: true,
+	validateSchema: false,
+	format: 'table',
+	store: 'sqlserver',
+	schemaName: 'dbo',
+	tableName: 'model_data',
+	insertable: true,
+	updateable: false,
+	deletable: false,
+	upsertable: false,
+	recreate: true,
+	skipDuplicateMapInputs: true,
+	skipDuplicateMapOutputs: true,
+	errorHandlingOption: 'stopOnFirstError') ~> model

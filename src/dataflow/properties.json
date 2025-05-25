@@ -1,0 +1,44 @@
+{
+    "name": "properties",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "AzureSqlDatabase1",
+            "type": "LinkedServiceReference"
+        },
+        "folder": {
+            "name": "real estate"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "PropertyID",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "PropertyType",
+                "type": "varchar"
+            },
+            {
+                "name": "Location",
+                "type": "varchar"
+            },
+            {
+                "name": "Size_sqm",
+                "type": "float",
+                "precision": 15
+            },
+            {
+                "name": "PriceUSD",
+                "type": "decimal",
+                "precision": 12,
+                "scale": 2
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Properties"
+        }
+    }
+}
