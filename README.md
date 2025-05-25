@@ -5,10 +5,8 @@
 
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-`<!-- Placeholder: Replace with actual license if different -->`{=html}
 [![Build
 Status](https://img.shields.io/badge/Build-Passing-brightgreen)](https://example.com)
-`<!-- Placeholder: Replace with actual build status link -->`{=html}
 
 
 ## 🔍 Executive Summary
@@ -62,7 +60,6 @@ estate data through a robust and scalable cloud-based workflow.
 ------------------------------------------------------------------------
 
 ## 🔄 Workflow Overview
-:::
 
 The project follows these key steps:
 
@@ -100,7 +97,6 @@ The project follows these key steps:
     -   Sales Data: Transaction dates, prices, agent involved
     -   Client/Agent Info: Contact details, interactions
     -   Visit Data: Property visit logs, dates, feedback
-:::
 
 
 ------------------------------------------------------------------------
@@ -167,7 +163,7 @@ The repository is organized as follows:
 
 
 1.  **Clone the Repository:**
-    `bash     git clone <your-repository-url>     cd <repository-name>`
+    `bash     git clone <https://github.com/SayedELMASRY2/Real-Estate-analysis.git>     cd <repository-name>`
 2.  **Azure Setup:**
     -   Ensure you have an active Azure subscription.
     -   Provision the necessary resources: Azure SQL Database, Azure
@@ -186,7 +182,7 @@ The repository is organized as follows:
 
 ------------------------------------------------------------------------
 
-## ▶️ Usage Instructions {#️-usage-instructions}
+## ▶️ Usage Instructions 
 
 -   **Data Ingestion:** Run the Python script to upload data to Azure
     SQL DB: `bash     python src/import.py`
@@ -202,7 +198,7 @@ The repository is organized as follows:
 
 ------------------------------------------------------------------------
 
-## 👥 Team Roles {#-team-roles}
+## 👥 Team Roles 
 
 Please fill in the roles, responsibilities, and LinkedIn profiles for
 each team member below:
@@ -219,22 +215,7 @@ each team member below:
 | Nermin Reda    | Documentation Specialist  | Project Documentation, Reporting, and Workflow Tracking        | [Nermin Reda](https://www.linkedin.com/in/nermin-reda-97798524a/) |
 
 
-------------------------------------------------------------------------
 
-
-## 📞 Support & Contact 
-
-
-For questions, issues, or suggestions regarding this project, please use
-the following channels:
-
--   **Primary Contact:** \[Your Name / Lead Name\] -
-    \[<your.email@example.com>\]
--   **Issue Tracker:** \[Link to GitHub Issues for the repository\]
--   **Project Channel:** \[Link to relevant Slack/Teams channel, if
-    applicable\]
-
-*(Please update contact details and links)*
 
 
 ------------------------------------------------------------------------
