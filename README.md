@@ -1,6 +1,6 @@
 
 
-# 🏠 Real Estate Data Analysis & Azure Pipeline Project {#-real-estate-data-analysis--azure-pipeline-project}
+# 🏠 Real Estate Data Analysis & Azure Pipeline Project 
 
 
 [![License:
@@ -227,43 +227,24 @@ The repository is organized as follows:
 Please fill in the roles, responsibilities, and LinkedIn profiles for
 each team member below:
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Name      Role                Responsibilities                      LinkedIn Profile
-  --------- ------------------- ------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------
-  Sayed     Azure & ML Engineer Azure Infrastructure Setup, Machine   [Sayed Elmasry](https://www.linkedin.com/in/sayed-elmasry)
-  Elmasry                       Learning Implementation and           
-                                Deployment                            
+  
+| Name           | Role                      | Responsibilities                                              | LinkedIn Profile |
+| :------------- | :------------------------ | :------------------------------------------------------------ | :--------------- |
+| Sayed Elmasry  | Azure & ML Engineer       | Azure Infrastructure Setup, Machine Learning Implementation and Deployment | [Sayed Elmasry](https://www.linkedin.com/in/sayed-elmasry) |
+| Verina Fouad   | SQL & Power BI Developer  | SQL Development, Power BI Dashboard Design and Theming        | [Verina Fouad](https://www.linkedin.com/in/verina-fouad-06270217a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+| Mai Mamdooh    | Power BI Analyst/Developer | Power BI Analysis, Dashboard Creation, Presentations          | [Mai Mamdooh](https://www.linkedin.com/in/mai-mamdooh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+| Naira ELazab   | SQL Analyst               | Writing and optimizing SQL queries, Data Analysis, Presentations | [Naira ELazab](https://www.linkedin.com/in/naira-elazab/) |
+| Rewan Gamal    | Power BI Analyst          | Power BI Data Modeling, Visualization, and Analysis            | [Rewan Gamal](https://www.linkedin.com/in/rewan-gamal-870964192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+| Zaineb Elghoul | SQL Developer             | SQL Scripting, Query Optimization, Data Preparation            | [Zaineb Elghoul](https://www.linkedin.com/in/zaineb-elghoul-3711a7173?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) |
+| Nermin Reda    | Documentation Specialist  | Project Documentation, Reporting, and Workflow Tracking        | [Nermin Reda](https://www.linkedin.com/in/nermin-reda-97798524a/) |
 
-  Verina    SQL & Power BI      SQL Development, Power BI Dashboard   [Verina
-  Fouad     Developer           Design and Theming                    Fouad](https://www.linkedin.com/in/verina-fouad-06270217a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-
-  Mai       Power BI            Power BI Analysis, Dashboard          [Mai Mamdooh](https://www.linkedin.com/in/mai-mamdooh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-  Mamdooh   Analyst/Developer   Creation, Presentations               
-
-  Naira     SQL Analyst         Writing and optimizing SQL queries,   [Naira ELazab](https://www.linkedin.com/in/naira-elazab/)
-  ELazab                        Data Analysis, Presentations          
-
-  Rewan     Power BI Analyst    Power BI Data Modeling,               [Rewan Gamal](https://www.linkedin.com/in/rewan-gamal-870964192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-  Gamal                         Visualization, and Analysis           
-
-  Zaineb    SQL Developer       SQL Scripting, Query Optimization,    [Zaineb
-  Elghoul                       Data Preparation                      Elghoul](https://www.linkedin.com/in/zaineb-elghoul-3711a7173?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-
-  Nermin    Documentation       Project Documentation, Reporting, and [Nermin Reda](https://www.linkedin.com/in/nermin-reda-97798524a/)
-  Reda      Specialist          Workflow Tracking                     
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-:::
-
-::: {#61875c23 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#331a3284 .cell .markdown}
+
 ## 📞 Support & Contact {#-support--contact}
-:::
 
-::: {#302115b4 .cell .markdown}
+
 For questions, issues, or suggestions regarding this project, please use
 the following channels:
 
@@ -274,30 +255,20 @@ the following channels:
     applicable\]
 
 *(Please update contact details and links)*
-:::
 
-::: {#24033ae7 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#bebff7ec .cell .markdown}
+
 ## 📜 License {#-license}
-:::
 
-::: {#2e07a0dc .cell .markdown}
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 [![Build
 Status](https://img.shields.io/badge/Build-Passing-brightgreen)]()
-:::
 
-::: {#ab24ad55 .cell .markdown}
 This project is licensed under the MIT License. See the `LICENSE` file
 for details. (Ensure a LICENSE file exists or specify the license
 directly).
-:::
 
-::: {#d90a9d41 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
