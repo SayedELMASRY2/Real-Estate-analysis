@@ -11,7 +11,7 @@ Status](https://img.shields.io/badge/Build-Passing-brightgreen)](https://example
 `<!-- Placeholder: Replace with actual build status link -->`{=html}
 
 
-## 🔍 Executive Summary {#-executive-summary}
+## 🔍 Executive Summary
 
 
 This project implements an end-to-end data analysis pipeline for real
@@ -25,7 +25,7 @@ estate data through a robust and scalable cloud-based workflow.
 
 ------------------------------------------------------------------------
 
-## 📖 Table of Contents {#-table-of-contents}
+## 📖 Table of Contents
 
 1.  [Project Objectives](#-project-objectives)
 2.  [Workflow Overview](#-workflow-overview)
@@ -41,7 +41,7 @@ estate data through a robust and scalable cloud-based workflow.
 
 ------------------------------------------------------------------------
 
-## 🏆 Project Objectives {#-project-objectives}
+## 🏆 Project Objectives 
 
 -   **Establish a Cloud-Based Data Pipeline:** Implement a full data
     workflow using Azure services (SQL DB, ADF, ML).
@@ -61,7 +61,7 @@ estate data through a robust and scalable cloud-based workflow.
 
 ------------------------------------------------------------------------
 
-## 🔄 Workflow Overview {#-workflow-overview}
+## 🔄 Workflow Overview
 :::
 
 The project follows these key steps:
@@ -85,12 +85,12 @@ The project follows these key steps:
     -   Connect Power BI to the data in Azure SQL DB.
     -   Create an interactive dashboard.
 
-    ![Our Team](workflow.jpg)
+    ![Project work flow](workflow.jpg)
 
 
 ------------------------------------------------------------------------
 
-## 📁 Dataset Overview {#-dataset-overview}
+## 📁 Dataset Overview 
 
 -   **Source**: Primarily local CSV files (Agents, Clients, Properties,
     Sales, Visits) ingested into Azure SQL DB.
@@ -105,7 +105,7 @@ The project follows these key steps:
 
 ------------------------------------------------------------------------
 
-## 🛠 Technologies & Tools {#-technologies--tools}
+## 🛠 Technologies & Tools
 
   -----------------------------------------------------------------------
   Functionality         Tools
@@ -129,52 +129,43 @@ The project follows these key steps:
 
   **Version Control**   Git, GitHub
   -----------------------------------------------------------------------
-:::
 
-::: {#64488a74 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#fbe330dd .cell .markdown}
-## 🏗️ Project Structure {#️-project-structure}
-:::
+## 🏗️ Project Structure 
 
-::: {#1ec4d6d9 .cell .markdown}
 The repository is organized as follows:
-:::
 
-::: {#e311d0af .cell .markdown}
-    ├── config/               # Configuration files (e.g., config.json)
-    ├── data/
-    │   └── raw/              # Original raw input data (CSV files)
-    ├── docs/                 # Documentation (presentation.pdf, info.txt, etc.)
-    ├── models/               # Trained ML models (model.pkl, MLmodel artifacts)
-    ├── reports/
-    │   ├── dashboards/       # Power BI dashboards (dashboard.pbix)
-    │   ├── figures/          # Images and diagrams (ERD.jpg, ML pipeline.jpg)
-    │   └── performance/      # Model performance data (TSV files)
-    ├── src/
-    │   ├── dataflow/         # Azure Data Factory related scripts/configs/exports
-    │   ├── sql/              # SQL scripts (ERD.sql, table queries)
-    │   └── import.py         # Python script for data ingestion to Azure SQL DB
-    ├── .gitignore            # Specifies intentionally untracked files
-    ├── conda.yaml            # Conda environment file (if used)
-    ├── python_env.yaml       # Python environment file (if used)
-    ├── requirements.txt      # Pip requirements file
-    └── README.md             # This file
-:::
 
-::: {#7b3e8ece .cell .markdown}
+```
+├── config/               # Configuration files (e.g., config.json)
+├── data/
+│   └── raw/              # Original raw input data (CSV files)
+├── docs/                 # Documentation (presentation.pdf, info.txt, etc.)
+├── models/               # Trained ML models (model.pkl, MLmodel artifacts)
+├── reports/
+│   ├── dashboards/       # Power BI dashboards (dashboard.pbix)
+│   ├── figures/          # Images and diagrams (ERD.jpg, ML pipeline.jpg)
+│   └── performance/      # Model performance data (TSV files)
+├── src/
+│   ├── dataflow/         # Azure Data Factory related scripts/configs/exports
+│   ├── sql/              # SQL scripts (ERD.sql, table queries)
+│   └── import.py         # Python script for data ingestion to Azure SQL DB
+├── .gitignore            # Specifies intentionally untracked files
+├── conda.yaml            # Conda environment file (if used)
+├── python_env.yaml       # Python environment file (if used)
+├── requirements.txt      # Pip requirements file
+└── README.md             # This file
+```
+
 
 ------------------------------------------------------------------------
-:::
 
-::: {#51af7ff5 .cell .markdown}
-## 🚀 Setup Guide {#-setup-guide}
-:::
 
-::: {#cf0089c1 .cell .markdown}
+## 🚀 Setup Guide 
+
+
 1.  **Clone the Repository:**
     `bash     git clone <your-repository-url>     cd <repository-name>`
 2.  **Azure Setup:**
@@ -191,18 +182,12 @@ The repository is organized as follows:
         `bash     pip install -r requirements.txt`
     -   (Optional) If using Conda, create the environment:
         `bash     # conda env create -f conda.yaml     # conda activate <env-name>`
-:::
 
-::: {#7152ae51 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#a27e124a .cell .markdown}
 ## ▶️ Usage Instructions {#️-usage-instructions}
-:::
 
-::: {#e274e99d .cell .markdown}
 -   **Data Ingestion:** Run the Python script to upload data to Azure
     SQL DB: `bash     python src/import.py`
 -   **Data Transformation:** Trigger the appropriate pipeline/dataflow
@@ -212,18 +197,13 @@ The repository is organized as follows:
 -   **Visualization:** Open the `dashboard.pbix` file located in
     `reports/dashboards/` using Power BI Desktop. Refresh the data
     connection to point to your Azure SQL Database.
-:::
 
-::: {#3276590f .cell .markdown}
+
 
 ------------------------------------------------------------------------
-:::
 
-::: {#48d39e30 .cell .markdown}
 ## 👥 Team Roles {#-team-roles}
-:::
 
-::: {#d44deed9 .cell .markdown}
 Please fill in the roles, responsibilities, and LinkedIn profiles for
 each team member below:
 
@@ -242,7 +222,7 @@ each team member below:
 ------------------------------------------------------------------------
 
 
-## 📞 Support & Contact {#-support--contact}
+## 📞 Support & Contact 
 
 
 For questions, issues, or suggestions regarding this project, please use
@@ -260,7 +240,7 @@ the following channels:
 ------------------------------------------------------------------------
 
 
-## 📜 License {#-license}
+## 📜 License 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 [![Build
