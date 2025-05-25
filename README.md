@@ -1,29 +1,19 @@
----
-jupyter:
-  language_info:
-    name: python
-  nbformat: 4
-  nbformat_minor: 5
----
 
-::: {#ba5b5a7f .cell .markdown}
+
 # 🏠 Real Estate Data Analysis & Azure Pipeline Project {#-real-estate-data-analysis--azure-pipeline-project}
-:::
 
-::: {#869a6dc1 .cell .markdown}
+
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 `<!-- Placeholder: Replace with actual license if different -->`{=html}
 [![Build
 Status](https://img.shields.io/badge/Build-Passing-brightgreen)](https://example.com)
 `<!-- Placeholder: Replace with actual build status link -->`{=html}
-:::
 
-::: {#f8f8d175 .cell .markdown}
+
 ## 🔍 Executive Summary {#-executive-summary}
-:::
 
-::: {#ad9a4653 .cell .markdown}
+
 This project implements an end-to-end data analysis pipeline for real
 estate data, leveraging Microsoft Azure cloud services. It covers data
 ingestion from local sources to Azure SQL Database, data modeling using
@@ -31,18 +21,12 @@ SSMS, transformation via Azure Data Factory dataflows, automated machine
 learning model training with Azure ML, and interactive visualization
 using Power BI. The goal is to extract actionable insights from real
 estate data through a robust and scalable cloud-based workflow.
-:::
 
-::: {#d50b5b66 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#eb5641a6 .cell .markdown}
 ## 📖 Table of Contents {#-table-of-contents}
-:::
 
-::: {#1303477d .cell .markdown}
 1.  [Project Objectives](#-project-objectives)
 2.  [Workflow Overview](#-workflow-overview)
 3.  [Dataset Overview](#-dataset-overview)
@@ -53,18 +37,12 @@ estate data through a robust and scalable cloud-based workflow.
 8.  [Team Roles](#-team-roles)
 9.  [Support & Contact](#-support--contact)
 10. [License](#-license)
-:::
 
-::: {#7d666b88 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#1697ca11 .cell .markdown}
 ## 🏆 Project Objectives {#-project-objectives}
-:::
 
-::: {#78f14e96 .cell .markdown}
 -   **Establish a Cloud-Based Data Pipeline:** Implement a full data
     workflow using Azure services (SQL DB, ADF, ML).
 -   **Data Ingestion & Modeling:** Securely upload local data to Azure
@@ -80,16 +58,12 @@ estate data through a robust and scalable cloud-based workflow.
     relevant to the real estate domain.
 :::
 
-::: {#7e227b7f .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#d10f7468 .cell .markdown}
 ## 🔄 Workflow Overview {#-workflow-overview}
 :::
 
-::: {#35c165f8 .cell .markdown}
 The project follows these key steps:
 
 1.  **Infrastructure Setup:** Provision Azure Server and Azure SQL
@@ -112,18 +86,12 @@ The project follows these key steps:
     -   Create an interactive dashboard.
 
     ![Our Team](workflow.jpg)
-:::
 
-::: {#9be59d58 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#2afc13db .cell .markdown}
 ## 📁 Dataset Overview {#-dataset-overview}
-:::
 
-::: {#10d89b54 .cell .markdown}
 -   **Source**: Primarily local CSV files (Agents, Clients, Properties,
     Sales, Visits) ingested into Azure SQL DB.
 -   **Domain**: Real Estate
@@ -134,16 +102,11 @@ The project follows these key steps:
     -   Visit Data: Property visit logs, dates, feedback
 :::
 
-::: {#91b48a55 .cell .markdown}
 
 ------------------------------------------------------------------------
-:::
 
-::: {#30c9edab .cell .markdown}
 ## 🛠 Technologies & Tools {#-technologies--tools}
-:::
 
-::: {#0438d1b2 .cell .markdown}
   -----------------------------------------------------------------------
   Functionality         Tools
   --------------------- -------------------------------------------------
